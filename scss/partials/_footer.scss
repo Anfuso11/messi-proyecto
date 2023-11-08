@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+
+    .footer-icons{
+        display: flex;
+        gap: 2rem;
+        font-size: 2rem;
+    }
+    a{
+        color: black;
+    }
+}

@@ -1,0 +1,173 @@
+@media screen and (max-width: 480px){
+    .header{
+        flex-direction: column;
+        font-size: 13px;
+
+        .menu{
+            flex-direction: row;
+            font-size: 9.9px;
+
+            .menu-item{
+                font-size: 8.5px;
+                margin-top: 1rem;
+            
+            }
+        }
+
+    }
+
+    .messi-info{
+        .messi-title {
+            font-size: 1.4rem;
+            padding: .5rem;
+        }
+        
+
+        .cerebro{
+            font-size: 19px;
+        }
+        .cerebroimg{
+            width: 70%;
+            height: 75%;   
+        }
+        .aimar{
+            font-size: 19px;
+        }
+        .aimarimg{
+            width: 70%;
+            height: 75%;
+        }
+
+    }
+
+
+    .noticias{
+        .noticias-messi{
+
+            .ultimas-noticias{
+                font-size: 1.4rem;
+            }
+
+        }
+        .noticias1{
+            .noticias-messi1{
+
+                .noticias-martino{
+                    font-size: 16px;
+                }
+            }
+        }
+        .videocontainer{
+
+            .container-tata{
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                padding-top: 56.25%;
+
+                .container-tataiframe{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            
+
+        }
+    }
+   
+    .biografia{
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: .5rem;
+        
+        .carousel-item{
+            width: 100%;
+            height: 100%;
+
+            .carrosuel-img{
+                width: 300px;
+            }
+        }
+    }
+
+    .palmares{
+        font-size: 1.4rem;
+
+        .grid{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(8, .1fr);
+            grid-template-areas: 
+            "barsa"
+            "pal-barsa"
+            "psg"
+            "pal-psg"
+            "miami"
+            "pal-miami"
+            "arg"
+            "pal-arg";
+        }
+    }
+
+    .records-messi{
+
+        .messi-title1{
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .contenedor-records{
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "records1"
+            "imagen-messi" 
+            "records2";
+
+            .records1{
+                font-size: 16px;
+            }
+
+            .records2{
+                font-size: 16px;
+            }
+
+            .imagen-messi{
+                width: 1px;
+            }
+
+            .imagen-messi :hover{
+                transition: 2s;
+                transform: rotate(720deg); 
+            }
+        }
+
+    }
+    
+    .stats-title{
+    font-size: 1.4rem;
+    font-weight: bold;
+
+        .contenedor-stats{
+            justify-content: center;
+            grid-template-columns: repeat(2, .5fr);
+            grid-template-rows: repeat(4, .8fr);
+            grid-template-areas: 
+            "barcelona barcelona barcelona barcelona"
+            "goles asistencias partidos titulos"
+            "cant-goles cant-asis cant-partidos cant-titulos"
+            "psg        psg       psg           psg"
+            "psg-goles     psg-asis      psg-partidos     psg-titulos"
+            "miami         miami         miami            miami     "
+            "miami-goles   miami-asis    miami-partidos     miami-titulos"
+            "arg           arg           arg              arg       "
+            "arg-goles     arg-asis      arg-partidos     arg-titulos"
+            "total         total         total            total     "
+            "total-goles   total-asis    total-partidos     total-titulos";
+        }
+
+    }   
+}

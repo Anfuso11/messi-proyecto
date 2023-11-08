@@ -1,0 +1,14 @@
+.premios{
+    .messi-title1{
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-inline: auto;
+        }
+        .card:hover{
+            transition: 2s;
+            transform: scale(1.1);
+        }
+    }
+}
