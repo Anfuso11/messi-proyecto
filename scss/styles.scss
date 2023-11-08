@@ -1,28 +1,23 @@
-.biografia-messi{
-    .biografia{
-        padding: 1rem;
-        display: flex;
-        justify-content: center;
-        font-size: 2rem;
-        color:black;
-        font-family: 'Montserrat', sans-serif;
-            
-    }
-}
+@import "./partials/variables";
 
-/* inicio sección palmarés */
+@import "./partials/fuentes";
 
-.palmares{
-    text-align: center;
-}
-    
+@import "./partials/reset";
 
+@import "./partials/header";
 
-/* inicio de seccion records */
+@import "./partials/body";
 
-/* SECCION STATS */
+@import "./partials/main";
 
-    
+@import "./partials/grids";
+
+@import "./partials/cards";
+
+@import "./partials/footer";
+
+@import "./partials/media-queries";
+   
 
 
 
