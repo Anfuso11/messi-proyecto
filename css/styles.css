@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Montserrat & display=swap");
 * {
   margin: 0;
@@ -10,60 +11,48 @@ body {
   background-color: #E2DADB;
   margin: 3rem;
 }
-body .header {
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
 }
-body .header .logo {
+.header .logo {
   display: flex;
   justify-content: left;
 }
-body .header .logo .navegador {
+.header .navegador {
   color: black;
   font-size: 20px;
   background-color: #E2DADB;
   display: flex;
   justify-content: right;
 }
-body .header .logo .navegador .menu {
+.header .navegador .menu {
   list-style-type: none;
   display: flex;
   gap: 1rem;
   font-size: 16px;
 }
-body .header .logo .navegador .menu .menu-item :hover {
+.header .navegador .menu .menu-item :hover {
   background: #e17e7e;
   color: black;
   transition: 2s;
 }
-body .header .logo .navegador .menu .menu-item :hover .menu-link {
+.header .navegador .menu .menu-item :hover .menu-link {
   text-decoration: none;
 }
 
-.messi {
-  background-color: #E2DADB;
-  color: black;
-}
-.messi .messi-title {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
-  color: black;
-  font-family: "Montserrat", sans-serif;
-  margin: 2.5rem;
-}
-
-section {
+.main .section {
   text-align: center;
   font-size: 20px;
 }
-section .messi {
+.main .section .messi {
   background-color: #E2DADB;
   color: black;
 }
-section .messi .messi-title {
+.main .section .messi-title {
   display: flex;
   justify-content: center;
   font-size: 2rem;
@@ -71,19 +60,19 @@ section .messi .messi-title {
   font-family: "Montserrat", sans-serif;
   margin: 2.5rem;
 }
-section .messi .messi-title p {
+.main .section .p {
   display: flex;
   justify-content: center;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
-section .messi .messi-title p .parrafo {
+.main .section .p .parrafo {
   padding: 0.6rem;
 }
-section .messi .messi-title p .parrafo .cerebro {
+.main .section .p .cerebro {
   padding: 1.2rem;
 }
-section .messi .messi-title p .parrafo .cerebro .aimar {
+.main .section .p .aimar {
   padding: 1.2rem;
 }
 
@@ -97,8 +86,484 @@ section .messi .messi-title p .parrafo .cerebro .aimar {
   gap: 2rem;
   font-size: 2rem;
 }
-.footer .footer-icons a {
+.footer .a {
   color: black;
+}
+
+/* inicio de seccion noticias */
+.main .section .ultimas-noticias {
+  display: flex;
+  padding: 1.8rem;
+  justify-content: center;
+}
+.main .section .noticias-martino {
+  padding: 1.2rem;
+}
+.main .section .respuesta-tata {
+  font-size: 1.2rem;
+}
+
+/* Inicio de seccion biografia */
+.main .section .biografia {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* inicio sección palmarés */
+.main .palmares {
+  text-align: center;
+}
+.main .section .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "barsa      psg      miami      arg" "pal-barsa  pal-psg  pal-miami  pal-arg";
+  gap: 2px;
+  padding: 1rem;
+}
+.main .section .grid .barsa {
+  display: grid;
+  grid-area: barsa;
+  background-color: #e5b5b5;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.main .section .grid .pal-barsa {
+  display: grid;
+  grid-area: pal-barsa;
+  background-color: #e5b5b5;
+  font-size: 18px;
+  text-align: left;
+  list-style-type: none;
+}
+.main .section .grid li {
+  margin: 0.5rem;
+}
+.main .section .grid .psg {
+  display: grid;
+  grid-area: psg;
+  background-color: #e5b5b5;
+}
+.main .section .grid .miami {
+  display: grid;
+  grid-area: miami;
+  background-color: #e5b5b5;
+}
+.main .section .grid .arg {
+  display: grid;
+  grid-area: arg;
+  background-color: #e5b5b5;
+}
+.main .section .grid .pal-psg {
+  display: grid;
+  grid-area: pal-psg;
+  background-color: #e5b5b5;
+  background-color: #e5b5b5;
+  font-size: 18px;
+  text-align: left;
+  list-style-type: none;
+}
+.main .section .grid .pal-miami {
+  display: grid;
+  grid-area: pal-miami;
+  background-color: #e5b5b5;
+  background-color: #e5b5b5;
+  font-size: 18px;
+  text-align: left;
+  list-style-type: none;
+}
+.main .section .grid .pal-arg {
+  display: grid;
+  grid-area: pal-arg;
+  background-color: #e5b5b5;
+  background-color: #e5b5b5;
+  font-size: 18px;
+  text-align: left;
+  list-style-type: none;
+}
+
+/* inicio de seccion records */
+.main .section .messi-title1 {
+  font-size: 2rem;
+}
+.main .section .contenedor-records {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "records1 imagen-messi records2";
+  gap: 2rem;
+}
+.main .section .contenedor-records .ul .records1 {
+  list-style: none;
+}
+.main .section .contenedor-records .ul .records2 {
+  list-style: none;
+}
+.main .section .imagen-messi :hover {
+  transition: 2s;
+  transform: rotate(720deg);
+}
+.main .section .messi-title1 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+.main .section .messi-title1 .card:hover {
+  transition: 2s;
+  transform: scale(1.1);
+}
+
+/* SECCION STATS */
+.main .section .stats-barcelona {
+  font-size: 24px;
+  text-align: center;
+}
+.main .section .contenedor-stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "......... goles         asistencias   partidos         titulos" "barcelona cant-goles    cant-asis     cant-partidos    cant-titulos" "psg       psg-goles     psg-asis      psg-partidos     psg-titulos" "miami     miami-goles   miami-asis    miami-partidos   miami-titulos" "arg       arg-goles     arg-asis      arg-partidos     arg-titulos" "total     total-goles   total-asis    total-partidos   total-titulos";
+  gap: 2px;
+  padding: 1rem;
+}
+.main .section .contenedor-stats .barcelona {
+  display: grid;
+  grid-area: barcelona;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .goles {
+  display: grid;
+  grid-area: goles;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .asistencias {
+  display: grid;
+  grid-area: asistencias;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .partidos {
+  display: grid;
+  grid-area: partidos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .titulos {
+  display: grid;
+  grid-area: titulos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .cant-goles {
+  grid-area: cant-goles;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .cant-asis {
+  grid-area: cant-asis;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .cant-partidos {
+  grid-area: cant-partidos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .cant-titulos {
+  grid-area: cant-titulos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .psg {
+  grid-area: psg;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .psg-goles {
+  grid-area: psg-goles;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .psg-asis {
+  grid-area: psg-asis;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .psg-partidos {
+  grid-area: psg-partidos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .psg-titulos {
+  grid-area: psg-titulos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .miami {
+  grid-area: miami;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .miami-goles {
+  grid-area: miami-goles;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .miami-asis {
+  grid-area: miami-asis;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .miami-partidos {
+  grid-area: miami-partidos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .miami-titulos {
+  grid-area: miami-titulos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .arg {
+  grid-area: arg;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .arg-goles {
+  grid-area: arg-goles;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .arg-asis {
+  grid-area: arg-asis;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .arg-partidos {
+  grid-area: arg-partidos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .arg-titulos {
+  grid-area: arg-titulos;
+  background-color: #e5b5b5;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .total {
+  grid-area: total;
+  background-color: #e78787;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .total:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
+.main .section .contenedor-stats .total-goles {
+  grid-area: total-goles;
+  background-color: #e78787;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .total-goles:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
+.main .section .contenedor-stats .total-asis {
+  grid-area: total-asis;
+  background-color: #e78787;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .total-asis:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
+.main .section .contenedor-stats .total-partidos {
+  grid-area: total-partidos;
+  background-color: #e78787;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .total-partidos:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
+.main .section .contenedor-stats .total-titulos {
+  grid-area: total-titulos;
+  background-color: #e78787;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main .section .contenedor-stats .total-titulos:hover {
+  transition: 1s;
+  transform: scale(1.3);
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .header .menu {
+    flex-direction: row;
+    font-size: 9.9px;
+  }
+  .header .menu .menu-item {
+    font-size: 8.5px;
+    margin-top: 1rem;
+  }
+  .messi-info .messi-title {
+    font-size: 1.4rem;
+    padding: 0.5rem;
+  }
+  .messi-info .cerebro {
+    font-size: 19px;
+  }
+  .messi-info .cerebroimg {
+    width: 70%;
+    height: 75%;
+  }
+  .messi-info .aimar {
+    font-size: 19px;
+  }
+  .messi-info .aimarimg {
+    width: 70%;
+    height: 75%;
+  }
+  .noticias .noticias-messi .ultimas-noticias {
+    font-size: 1.4rem;
+  }
+  .noticias .noticias1 .noticias-messi1 .noticias-martino {
+    font-size: 16px;
+  }
+  .noticias .videocontainer .container-tata {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+  .noticias .videocontainer .container-tata .container-tataiframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .biografia {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  .biografia .carousel-item {
+    width: 100%;
+    height: 100%;
+  }
+  .biografia .carousel-item .carrosuel-img {
+    width: 300px;
+  }
+  .palmares {
+    font-size: 1.4rem;
+  }
+  .palmares .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 0.1fr);
+    grid-template-areas: "barsa" "pal-barsa" "psg" "pal-psg" "miami" "pal-miami" "arg" "pal-arg";
+  }
+  .records-messi .messi-title1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .records-messi .contenedor-records {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "records1" "imagen-messi" "records2";
+  }
+  .records-messi .contenedor-records .records1 {
+    font-size: 16px;
+  }
+  .records-messi .contenedor-records .records2 {
+    font-size: 16px;
+  }
+  .records-messi .contenedor-records .imagen-messi {
+    width: 1px;
+  }
+  .records-messi .contenedor-records .imagen-messi :hover {
+    transition: 2s;
+    transform: rotate(720deg);
+  }
+  .stats-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+  .stats-title .contenedor-stats {
+    justify-content: center;
+    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-rows: repeat(4, 0.8fr);
+    grid-template-areas: "barcelona barcelona barcelona barcelona" "goles asistencias partidos titulos" "cant-goles cant-asis cant-partidos cant-titulos" "psg        psg       psg           psg" "psg-goles     psg-asis      psg-partidos     psg-titulos" "miami         miami         miami            miami     " "miami-goles   miami-asis    miami-partidos     miami-titulos" "arg           arg           arg              arg       " "arg-goles     arg-asis      arg-partidos     arg-titulos" "total         total         total            total     " "total-goles   total-asis    total-partidos     total-titulos";
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
