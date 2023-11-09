@@ -14,6 +14,7 @@
         background-color: $colorPrincipal;
         padding-bottom: 1rem;
         padding-top: 1rem;
+        text-align: center;
     }
     
     .pal-barsa{
@@ -33,18 +34,27 @@
         display: grid;
         grid-area: psg;
         background-color: $colorPrincipal;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
 
     .miami{
         display: grid;
         grid-area: miami;
         background-color: $colorPrincipal;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
 
     .arg{
         display: grid;
         grid-area: arg;
         background-color: $colorPrincipal;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
     }
 
     .pal-psg{
@@ -80,6 +90,7 @@
 
     .messi-title1{
         font-size: 2rem;
+        text-align: center;
     }
 
     .contenedor-records{
@@ -91,10 +102,13 @@
         
         .records1{
             list-style: none;
+            text-align: center;
+
         }
 
         .records2 {
             list-style: none;
+            text-align: center;
         }
 
         .imagen-messi :hover{
@@ -105,6 +119,9 @@
 }
 
 .class-stats{
+    .stats-title{
+        text-align: center;
+    }
     .stats-barcelona{
         font-size: 24px;
         text-align: center;
