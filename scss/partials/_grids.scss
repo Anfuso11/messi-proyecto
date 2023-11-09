@@ -111,8 +111,12 @@
             text-align: center;
         }
 
-        .imagen-messi :hover{
+        .iamgen-messi{
             transition: 2s;
+        }
+
+        .imagen-messi :hover{
+        
             transform: rotate(720deg); 
         }
     }

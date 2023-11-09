@@ -109,6 +109,7 @@ body {
   display: flex;
   padding: 1.8rem;
   justify-content: center;
+  text-align: center;
 }
 .noticias .noticias1 .noticias-messi1 .noticias-martino {
   padding: 1.2rem;
