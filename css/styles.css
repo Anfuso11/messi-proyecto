@@ -566,22 +566,32 @@ body {
     width: 100%;
     height: 100%;
   }
-  .biografia-messi #carouselExample .carousel-inner {
-    width: 100%;
-    height: 100%;
-  }
-  .biografia-messi #carouselExample .carousel-inner .carousel-item .carrousel-img {
-    width: 10px;
-  }
   .biografia-messi .biografia {
     font-size: 1.4rem;
     font-weight: bold;
     padding: 0.5rem;
   }
+  .biografia-messi .carousel {
+    max-width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .biografia-messi .carousel .carousel-inner {
+    width: 70%;
+  }
+  .biografia-messi .carousel .carousel-inner .carousel-item {
+    height: 200px;
+  }
+  .biografia-messi .carousel .carousel-inner .carrosuel-img {
+    max-width: 100%;
+  }
   .palmares {
     font-size: 1.4rem;
   }
-  .palmares .grid {
+  .grid {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 0.1fr);
     grid-template-areas: "barsa" "pal-barsa" "psg" "pal-psg" "miami" "pal-miami" "arg" "pal-arg";
