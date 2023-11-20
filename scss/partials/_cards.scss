@@ -6,12 +6,12 @@
     }
     .card{
         display: flex;
-        
+        transition: 1s;
         align-items: center;
         margin-inline: auto;
     }
+
     .card:hover{
-        transition: 1s;
         transform: scale(1.1);
     }
 }
